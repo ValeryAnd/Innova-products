@@ -94,50 +94,48 @@ export default function Audifonos() {
                             </div>
                         </div>
                     </Link>
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${25}`}>
                         <img src={img8} alt=""/>
                         <div className={styles.newText}>
                             <h5>SKULLCANDY</h5>
                             <h4>Audífonos skullcandy crusher 3.0 bt</h4>
                             <p>S/419.00</p>
                         </div>
-                    </div>
-
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    </Link>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${26}`}>
                         <img src={img9} alt=""/>
                         <div className={styles.newText}>
                             <h5>SONY</h5>
                             <h4>Audífonos in ear Sony true wireless blanco</h4>
                             <p>S/189.00</p>
                         </div>
-                    </div>
-
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    </Link>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${27}`}>
                         <img src={img10} alt=""/>
                         <div className={styles.newText}>
-                            <h5>12GO</h5>
-                            <h4>Audifonos de unicornio I2GO PRO</h4>
-                            <p>S/79.90</p>
+                            <h5>APPLE</h5>
+                            <h4>Apple airpods max</h4>
+                            <p>S/2779.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${28}`}>
                         <img src={img11} alt=""/>
                         <div className={styles.newText}>
                             <h5>HUAWEI</h5>
                             <h4>Audifonos bluetooth tws freebuds pro 2</h4>
                             <p>S/579.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${29}`}>
                         <img src={img12} alt=""/>
                         <div className={styles.newText}>
-                            <h5>JBL</h5>
-                            <h4>Audífonos JBL WAVE 300 blanco</h4>
-                            <p>S/49.00</p>
+                            <h5>GENERICO</h5>
+                            <h4>Audífonos Bluetooth 5.1 Gaming K9</h4>
+                            <p>S/69.00</p>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </section>
             <Footer/>

@@ -9,7 +9,7 @@ import img3 from '../imagenes/mouse3.jpg'
 import img4 from '../imagenes/mouse4.jpg'
 import img5 from '../imagenes/teclado5.jpg'
 import img6 from '../imagenes/teclado6.jpg'
-import img7 from '../imagenes/mouse2.jpg'
+import img7 from '../imagenes/mouse3-removebg-preview.png'
 import img8 from '../imagenes/mouse5.jpg'
 import img9 from '../imagenes/mouse6.jpg'
 import img10 from '../imagenes/mouse7.jpg'
@@ -82,58 +82,58 @@ export default function Accesorios() {
                         </div>
                     </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${42}`}>
                         <img src={img7} alt=""></img>
                         <div className={styles.newText}>
                             <h5>LENOVO</h5>
                             <h4>Mouse gamer Lenovo IDEAPAD M100 RGB</h4>
-                            <p>S/999.00</p>
+                            <p>S/39.90</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${43}`}>
                         <img src={img8} alt=""></img>
                         <div className={styles.newText}>
                             <h5>LOGITECH G</h5>
                             <h4>Mouse Logitech G blanco </h4>
                             <p>S/250.00</p>
                         </div>
-                    </div>
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    </Link>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${44}`}>
                         <img src={img9} alt=""></img>
                         <div className={styles.newText}>
                             <h5>Logitech</h5>
                             <h4>Mouse Logitech G203 RGB blanco</h4>
                             <p>S/170.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${45}`}>
                         <img src={img10} alt=""></img>
                         <div className={styles.newText}>
                             <h5>Logitech</h5>
                             <h4>Mouse Logitech G203 RGB blanco</h4>
                             <p>S/180.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${46}`}>
                         <img src={img11} alt=""></img>
                         <div className={styles.newText}>
                             <h5>Logitech</h5>
                             <h4>Teclado gaming Logitech G PRO</h4>
                             <p>S/430.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${47}`}>
                         <img src={img12} alt=""></img>
                         <div className={styles.newText}>
                             <h5>Logitech</h5>
                             <h4>Teclado Logitech K380 ROSE</h4>
-                            <p>S/5,199.00</p>
+                            <p>S/119.00</p>
                         </div>
-                    </div>
+                    </Link>
 
                 </div>
 

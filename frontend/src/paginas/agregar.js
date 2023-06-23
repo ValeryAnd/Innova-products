@@ -30,6 +30,29 @@ import img22 from '../imagenes/teclado5.jpg'
 import img23 from '../imagenes/teclado6.jpg'
 import img24 from '../imagenes/audifonos2.jpg'
 import img25 from '../imagenes/audifonos7.jpg'
+import img26 from '../imagenes/audifonos11.jpg'
+import img27 from '../imagenes/audifonos9.jpg'
+import img28 from '../imagenes/audifonos10.jpg'
+import img29 from '../imagenes/audifonos13.jpg'
+import img30 from '../imagenes/audifonos14.jpg'
+import img31 from '../imagenes/celular7.jpg'
+import img32 from '../imagenes/celular8.jpg'
+import img33 from '../imagenes/celular9.jpg'
+import img34 from '../imagenes/celular10.jpg'
+import img35 from '../imagenes/celular11.jpg'
+import img36 from '../imagenes/celular12.jpg'
+import img37 from '../imagenes/2004293401511-2.jpg'
+import img38 from '../imagenes/laptop1.jpg'
+import img39 from '../imagenes/laptop2.jpg'
+import img40 from '../imagenes/laptop3.jpg'
+import img41 from '../imagenes/laptop4.jpg'
+import img42 from '../imagenes/laptop5.jpg'
+import img43 from '../imagenes/mouse3-removebg-preview.png'
+import img44 from '../imagenes/mouse5.jpg'
+import img45 from '../imagenes/mouse6.jpg'
+import img46 from '../imagenes/mouse7.jpg'
+import img47 from '../imagenes/teclado4.jpg'
+import img48 from '../imagenes/teclado8.jpg'
 import new1 from '../imagenes/klim-musalimov-pCJYFw8dSnE-unsplash-removebg-preview.png'
 import new2 from '../imagenes/stefen-tan-KYw1eUx1J7Y-unsplash-removebg-preview.png'
 import new3 from '../imagenes/2004311980721-1.jpg'
@@ -505,7 +528,347 @@ export default function Agregar() {
             ],
             productoPrecio: 99.00,
             productoImagen: img25
+        },{
+            productoNombre: 'Audífonos skullcandy crusher 3.0 bt',
+            productoDescripcion: 'Cómodos, potentes e inalámbricos, los audífonos over ear Crusher 3.0 de Skullcandy te acompañarán a donde vayas, otorgándote audio de altísima calidad.',
+            productoCaracteristicas: 'Si eres una persona exigente y que gusta de disfrutar cada detalle de su música favorita, Skullcandy y Ripley.com tienen para ti un par de auriculares sorprendentemente bellos y de sublime performance.El modelo Crusher 3.0 destaca por ofrecer una experiencia verdaderamente inmersiva en todo lo que estés escuchando.Refinados y poderosos, ofrecen hasta 40 horas de duración con una sola carga, conexión vía Bluetooth muy estable y el peso ideal para llevarlos con suma comodidad.',
+            productoEspecificaciones: [
+                'Marca	SKULLCANDY',
+                'Resistente al agua	No',
+                'Tipo de Producto	Audífonos',
+                'Bluetooth	Sí',
+                'Sensibilidad dB	102 dB (1mW/500Hz)',
+                'Color	Negro'
+            ],
+            productoPrecio: 189.00,
+            productoImagen: img26
+        },{
+            productoNombre: 'Audífonos "True Wireless" WF-C500',
+            productoDescripcion: 'Cómodos, potentes e inalámbricos, los audífonos over ear Crusher 3.0 de Skullcandy te acompañarán a donde vayas, otorgándote audio de altísima calidad.',
+            productoCaracteristicas: 'Si eres una persona exigente y que gusta de disfrutar cada detalle de su música favorita, Skullcandy y Ripley.com tienen para ti un par de auriculares sorprendentemente bellos y de sublime performance.El modelo Crusher 3.0 destaca por ofrecer una experiencia verdaderamente inmersiva en todo lo que estés escuchando.Refinados y poderosos, ofrecen hasta 40 horas de duración con una sola carga, conexión vía Bluetooth muy estable y el peso ideal para llevarlos con suma comodidad.',
+            productoEspecificaciones: [
+                'Superficie con diseño ergonómico',
+                'Estuche de bolsillo para llevar a cualquier parte',
+                'Botones intuitivos',
+                'Compatibles con asistentes de voz',
+                'Encuentra tus audífonos con Fast Pair',
+                'Color	Negro'
+            ],
+            productoPrecio: 79.90,
+            productoImagen: img27
+        },{
+            productoNombre: 'Apple airpods max',
+            productoDescripcion: 'ENCUENTRA EL APPLE AIRPODS MAX, EN INNOVA PRODUCTS PERÚ ¡COMPRA ONLINE!',
+            productoCaracteristicas: 'Quisimos reinventar los audífonos de diadema para llevarlos un paso más allá. Desde las almohadillas hasta la misma diadema, los AirPods Max están diseñados para lograr un ajuste excepcional y crear un aislamiento acústico óptimo que se adapta a la forma de la cabeza. El resultado es una experiencia de audio realmente inmersiva.Los brazos telescópicos se extienden con facilidad y se quedan fijos en la posición que los coloques, para brindar un ajuste y un aislamiento perfectos.',
+            productoEspecificaciones: [
+                'Controlador dinámico diseñado por Apple',
+                'Cancelación Activa de Ruido',
+                'Modo Ambiente',
+                'Ecualización Adaptativa',
+                'Chip H1 de Apple para audífonos',
+                'Nueve micrófonos en total'
+            ],
+            productoPrecio: 2779.00,
+            productoImagen: img28
+        },{
+            productoNombre: 'Audifonos bluetooth tws freebuds pro 2',
+            productoDescripcion: '¡Ven a Innova Prdoucts.com y encuentra los mejores audífonos inalámbricos de la marca Huawei! Compra aquí.',
+            productoCaracteristicas: 'Quisimos reinventar los audífonos de diadema para llevarlos un paso más allá. Desde las almohadillas hasta la misma diadema, los AirPods Max están diseñados para lograr un ajuste excepcional y crear un aislamiento acústico óptimo que se adapta a la forma de la cabeza. El resultado es una experiencia de audio realmente inmersiva.Los brazos telescópicos se extienden con facilidad y se quedan fijos en la posición que los coloques, para brindar un ajuste y un aislamiento perfectos.',
+            productoEspecificaciones: [
+                'Marca	HUAWEI',
+                'Peso (kg)	0.3',
+                'Peso (kg)	0.3',
+                'Conectividad	Bluetooth',
+                'Aislador de ruido	Sí',
+                'Control de volumen	Sí',
+                'Control por voz	No'
+            ],
+            productoPrecio: 579.00,
+            productoImagen: img29
+        },{
+            productoNombre: 'Audífonos Bluetooth 5.1 Gaming K9 Con Microfono – Negro',
+            productoDescripcion: 'Tiempo de carga: 1,5hTiempo de espera: 100hPuerto de carga: USB Tipo-CPeso de un solo auricular: 5gPeso del estuche de carga: 32g.',
+            productoCaracteristicas: 'Estos auténticos auriculares inalámbricos vienen con el estuche de carga más innovadores para que puedas participar en tu juego online favorito en cualquier momento y lugar. Estos auriculares TWS cuentan con controladores de 13 mm para un sonido estéreo perfecto con baja latencia y una duración de la batería notablemente larga gracias a un estuche de carga de 350 mAh. Además, la luz de respiración de colores, el diseño llamativo y los auriculares ligeros y ergonómicos llevan el juego móvil al siguiente nivel.',
+            productoEspecificaciones: [
+                'Segmento	Gamer',
+                'Color	negro',
+                'Conectividad/conexión	Bluetooth',
+                'Modelo	EarPhone-K9',
+                'Tipo de auricular	In-Ear',
+                'Características	Cuenta con bluetooth'
+            ],
+            productoPrecio: 69.00,
+            productoImagen: img30
+        }, {
+            productoNombre: 'Huawei Nova 11I 6.8" 8GB 128GB 48MP + 2MP Black bundle freebuds SE',
+            productoDescripcion: '¡Ven a Innova Prdoucts.com y encuentra los mejores celulares de la marca Huawei! Compra aquí.',
+            productoCaracteristicas: 'Huawei Nova 11i 8GB 128GB Black BUNDLE Freebuds SE Compra Celular huawei nova 11i 6.8" 8gb 128gb 48mp + 2mp black bundle freebuds se en Ripley Perú. Conoce sus caracteristicas y recíbelo en pocos días.',
+            productoEspecificaciones: [
+                'Marca	HUAWEI',
+                'Memoria Interna	128GB',
+                'Memoria RAM	8GB',
+                'Procesador	Qualcomm Snapdragon',
+                'Cámara frontal	16MP',
+                'Cámara posterior rango	Más de 10MP',
+                'Cámara posterior	48MP + 2MP'
+            ],
+            productoPrecio: 999.00,
+            productoImagen: img31
+        },{
+            productoNombre: 'Apple Iphone 14 6.1" 128GB 12MP + 12MP azul',
+            productoDescripcion: 'Memoria Interna: 128GB. Cámara frontal: 12MP ,Tipo Procesador, Apple Chip A15 Bionic.',
+            productoCaracteristicas: 
+            'Pantalla Super Retina XDR. \n' +
+            'Resolución de 2532 x 1170 pixeles a 460 ppi. \n' +
+            'Resistencia al agua: Clasificación IP68 (hasta 30 minutos a una profundidad máxima de 6 metros). \n' +
+            'Chip A15 Bionic: CPU de 6 núcleos con 2 núcleos de rendimiento y 4 de eficiencia.',
+            productoEspecificaciones: [
+                'Marca	APPLE',
+                'Memoria Interna	128GB',
+                'Memoria RAM	No aplica',
+                'Procesador	A15 Bionic',
+                'Tipo Procesador	Apple Chip A15 Bionic',
+                'Resolución de la pantalla : Resolución de 2.532 por 1.170 píxeles'
+            ],
+            productoPrecio: 3799.00,
+            productoImagen: img32
+        },{
+            productoNombre: 'Oppo A57 6.56" 4GB 128GB 13MP F/2.2 green',
+            productoDescripcion: '¡Ven a Innova Prdoucts.com y encuentra los mejores celulares de la marca oppo! Compra aquí.',
+            productoCaracteristicas: 'OPPO A57 128GB 4GB GREEN , Descubre Celular oppo a57 6.56" 4gb 128gb 13mp f/2.2 green al mejor precio. Compra con Ofertas y Descuentos.',
+            productoEspecificaciones: [
+                'Marca	OPPO',
+                'Memoria Interna	128 GB',
+                'Memoria RAM	4GB',
+                'Procesador	Mediatek',
+                'Tipo Procesador	MediaTek Helio G35',
+                'Capacidad de batería	5000 mAh'
+            ],
+            productoPrecio: 799.00,
+            productoImagen: img33
+        },{
+            productoNombre: 'Honor X8A 6.7" 8GB 128GB 100M+5M+2M black',
+            productoDescripcion: 'Memoria RAM, 8GB. Procesador, Mediatek. Tipo Procesador, Helio G88. Cámara frontal, 16MP. Cámara posterior rango, Más de 10MP. Cámara posterior, 100M+5M+2M',
+            productoCaracteristicas: 'Recibe todas tus compras online. Compra con las mejores ofertas y descuentos. Celular honor x8a 6.7" 8gb 128gb 100m+5m+2m black',
+            productoEspecificaciones: [
+                'Marca	HONOR',
+                'Memoria Interna	128 GB',
+                'Memoria RAM	8GB',
+                'Procesador	Mediatek',
+                'Tipo Procesador	Helio G88',
+                'Capacidad de batería	4500 mAh'
+            ],
+            productoPrecio: 929.00,
+            productoImagen: img34
+        },{
+            productoNombre: 'Samsung Galaxy S23 6.1" 8GB 256GB 50MP + 10MP + 12MP SM-S911BZGMLTP verde',
+            productoDescripcion: 'Memoria Interna: 256GB. Cámara frontal: 12 MP. Cámara posterior: 50 MP + 10 MP + 12 MP. Batería: 3900 mAh.',
+            productoCaracteristicas: 'OPPO A57 128GB 4GB GREEN , Descubre Celular oppo a57 6.56" 4gb 128gb 13mp f/2.2 green al mejor precio. Compra con Ofertas y Descuentos.',
+            productoEspecificaciones: [
+                'Marca	SAMSUNG',
+                'Memoria Interna	256GB',
+                'Memoria RAM	4GB',
+                'Procesador	Qualcomm | SM8550',
+                'Tipo Procesador	Octa-Core',
+                'Capacidad de batería	3900 mAh'
+            ],
+            productoPrecio: 4299.00,
+            productoImagen: img35
+        },{
+            productoNombre: 'Samsung Galaxy S23 Ultra 6.8" 12GB 512GB 200MP + 10MP + 12MP + 10MP SM-S918BLIVLTP lavanda',
+            productoDescripcion: 'Memoria Interna: 512GB. Cámara frontal: 12 MP. Cámara posterior: 200 MP + 10 MP + 12 MP + 10 MP. Batería: 5000 mAh.',
+            productoCaracteristicas: 'Toma fotos y videos nítidos desde el anochecer hasta el amanecer. El sensor de cámara más avanzado y el procesador más rápido del Galaxy admiten poca luz y reducen el ruido. E incluso la lente de la cámara borra la captura al atenuar el resplandor,Maximiza tu tiempo libre con el chip más potente de un teléfono inteligente Galaxy. Las características mejoradas en todos los ámbitos significan que todo, desde los juegos hasta la transmisión, está optimizado y es perfecto, sin agotar la batería,El uso de materiales conscientes permite que nuestro teléfono inteligente sea más ecológico. El vidrio reciclado y la película de PET acentúan el exterior del smartphone, y la caja hecha de papel reciclado lo hace amigable con el planeta desde el momento en que llega a tus manos.',
+            productoEspecificaciones: [
+                'Marca	SAMSUNG',
+                'Memoria Interna	512GB',
+                'Memoria RAM	12GB',
+                'Procesador	Qualcomm | SM8550',
+                'Tipo Procesador	Octa-Core',
+                'Capacidad de batería	5000 mAh'
+            ],
+            productoPrecio: 5199.00,
+            productoImagen: img36
+        },{
+            productoNombre: 'Laptop HP amd Ryzen 5 8GB',
+            productoDescripcion: 'Procesador: Intel Core i7 · Memoria RAM: 12GB · Disco duro: 512 GB SSD · Tarjeta gráfica: Intel Iris® Xe Graphics (integrada) · Tipo de disco duro: SSD.',
+            productoCaracteristicas: 'Procesamiento Intel® Core™ de 11va generaciónPantalla 15.6” FHD táctil opcional con bordes estrechos para una visualización grandiosaTapa de privacidad en la cámara web y lector de huellas digitales opcionalAltavoces Dolby Audio™ orientados al usuarioIncluye 1 puerto USB-C & soporta Rapid Charge para que siempre tengas bateríaAlgunos puertos y características pueden ser opcionales; colores sujetos a disponibilidad',
+            productoEspecificaciones: [
+                'Marca	LENOVO',
+                'Modelo	IdeaPad 5i',
+                'Conectividad	Wi-Fi / Bluetooth',
+                'Cámara	HD 720p con obturador de privacidad',
+                'Procesador	Intel Core i7',
+                'Memoria RAM	12GB',
+                'Disco duro	512 GB SSD',
+                'Tarjeta gráfica	Intel Iris® Xe Graphics (integrada)'
+            ],
+            productoPrecio: 1959.00,
+            productoImagen: img37
         },
+        {
+            productoNombre: 'Lenovo IDEAPAD 5I Intel core I7 12GB RAM 512GB SSD 15.6" FHD',
+            productoDescripcion: 'Procesador: Intel Core i7 · Memoria RAM: 12GB · Disco duro: 512 GB SSD · Tarjeta gráfica: Intel Iris® Xe Graphics (integrada) · Tipo de disco duro: SSD.',
+            productoCaracteristicas: 'Procesamiento Intel® Core™ de 11va generaciónPantalla 15.6” FHD táctil opcional con bordes estrechos para una visualización grandiosaTapa de privacidad en la cámara web y lector de huellas digitales opcionalAltavoces Dolby Audio™ orientados al usuarioIncluye 1 puerto USB-C & soporta Rapid Charge para que siempre tengas bateríaAlgunos puertos y características pueden ser opcionales; colores sujetos a disponibilidad',
+            productoEspecificaciones: [
+                'Marca	LENOVO',
+                'Modelo	IdeaPad 5i',
+                'Conectividad	Wi-Fi / Bluetooth',
+                'Cámara	HD 720p con obturador de privacidad',
+                'Procesador	Intel Core i7',
+                'Memoria RAM	12GB',
+                'Disco duro	512 GB SSD',
+                'Tarjeta gráfica	Intel Iris® Xe Graphics (integrada)'
+            ],
+            productoPrecio: 2999.00,
+            productoImagen: img38
+        },
+        {
+            productoNombre: 'Laptop Lenovo IDEAPAD GAMING 3 AMD Ryzen 5 16GB RAM 512GB SSD 15.6',
+            productoDescripcion: 'Disco duro: 512GB. Memoria RAM: 16GB. Procesador: AMD Ryzen 5. Tipo de disco duro: SSD. ',
+            productoCaracteristicas: 'Laptop gamer IdeaPad Gaming 3 de Lenovo.Procesador AMD Ryzen 5 5600H.Tarjeta de video NVIDIA GeForce RTX 3050 (4GB).Memoria RAM de 16GB.Almacenamiento en estado sólido de 512GB.',
+            productoEspecificaciones: [
+                'Marca	LENOVO',
+                'Lector de tarjetas	No',
+                'Parlantes	2',
+                'Tipo de Producto	Laptops',
+                'Disco duro	512GB',
+                'Tarjeta de video	NVIDIA GeForce RTX 3050 (4GB)'
+            ],
+            productoPrecio: 3799.00,
+            productoImagen: img39
+        },
+        {
+            productoNombre: 'Laptop gamer Asus TUF F15 FX506LHB-HN323UW Intel core I5 10300H 8GB RAM 512GB SSD 15.6',
+            productoDescripcion: ' Procesador: Intel Core i5 · Memoria RAM: 8GB · Disco duro: 512GB · Tarjeta gráfica: NVIDIA GeForce GTX 1650 · Tipo de disco duro: SSD.',
+            productoCaracteristicas: 'El ASUS TUF Gaming cuenta con todo lo que necesitas para derrotar a la competencia, como componentes de alto rendimiento enfriados por un sistema térmico con módulos anti polvo y durabilidad testeada bajo pruebas de grado militar.Pantalla ultrarrápida.La sorprendente pantalla de 144Hz del ASUS TUF Gaming F15 entrega visuales fluidas para una experiencia de gaming más inmersiva.Resistencia de Grado Militar.Lleva el ASUS TUF Gaming A15 a cualquier lugar gracias a su resistencia a cualquier tipo de ambiente extremo, testeada bajo estrictas pruebas de grado militar.',
+            productoEspecificaciones: [
+                'Marca	ASUS',
+                'Modelo	FX506LHB-HN323W',
+                'Cámara	720p',
+                'Procesador	Intel Core i5',
+                'Memoria RAM	8GB',
+                'Disco duro	512GB'
+            ],
+            productoPrecio: 2599.00,
+            productoImagen: img40
+        },
+        {
+            productoNombre: 'Laptop Apple Macbook air 13 con chip M2 (2022) 8GB RAM 2TB SSD - plateado',
+            productoDescripcion: 'ENCUENTRA LA MACBOOK AIR,POTENCIA EN VELOCIDAD, EFICIENCIA.CPU DE 8 NÚCLEOS,GPU DE 10 NÚCLEOS,MOTOR DE ALTO RENDIMIENTO,BATERÍA DE 21 HORAS DE DURACIÓN,EN RIPLEY PERÚ COMPRA ONLINE.',
+            productoCaracteristicas: 'Teclado Ingles Chip Apple M2 con CPU de 8 núcleos, GPU de 8 núcleos, Neural Engine de 16 núcleos,Memoria unificada de 8GB,Almacenamiento SSD de 2TB,Pantalla Liquid Retina de 13,6 pulgadas con True Tone,Cámara FaceTime HD de 1080p,Puerto de carga MagSafe,Dos puertos Thunderbolt/USB,Adaptador de corriente USB tipo C de 30 W.',
+            productoEspecificaciones: [
+                'Marca	APPLE',
+                'Procesador	M2 Apple',
+                'Memoria RAM	8GB',
+                'Disco Duro	2TB',
+                'Tipo Procesador	Octa-Core',
+                'Conectividad	Wi-Fi'
+            ],
+            productoPrecio: 9649.00,
+            productoImagen: img41
+        },{
+            productoNombre: 'Laptop Acer NITRO 5 Intel core I5 8GB RAM 512GB SSD 15.6 FHD IPS 144HZ GTX 1650 4GB',
+            productoDescripcion: 'Procesador: Intel Core i5. Memoria RAM: 8GB. Disco duro: 512GB. Tarjeta gráfica: NVIDIA GeForce GTX 1650. Tipo de disco duro: SSD.',
+            productoCaracteristicas: 'Domina el mundo del juego con la potencia combinada de los procesadores Intel® CoreTM de 11.a generación y los gráficos NVIDIA® GeForce GTX1. Configure su computadora portátil para máxima velocidad y almacenamiento masivo con dos ranuras para SSD M.2 PCIe / SATA1 (hasta 1TB Raid 0 / 2TB HDD) y hasta 32GB de RAM DDR4.Domine el mundo de los videojuegos con la potencia y el rendimiento de los gráficos NVIDIA® GeForce® GTX 1650 con las capacidades de la arquitectura NVIDIA® Turing®¹.Obtenga una ventaja en línea tomando el control de su red y priorizando su juego con Killer™ Ethernet E2600 e Intel® Wi-Fi 61. Conecte todos sus periféricos a la gama completa de puertos, incluidos HDMI 2.0 y el estándar USB 3.2 más nuevo con Gen1 y 2 soporte1.',
+            productoEspecificaciones: [
+                'Marca	ACER',
+                'Modelo	AN515-57-57U5',
+                'Memoria RAM	8GB',
+                'Disco duro	512GB',
+                'Tarjeta gráfica	NVIDIA GeForce GTX 1650',
+                'Sistema operativo	Windows 11 Home'
+            ],
+            productoPrecio: 2799.00,
+            productoImagen: img42
+        },{
+            productoNombre: 'Mouse gamer Lenovo IDEAPAD M100 RGB',
+            productoDescripcion: 'Procesador: Intel Core i5. Memoria RAM: 8GB. Disco duro: 512GB. Tarjeta gráfica: NVIDIA GeForce GTX 1650. Tipo de disco duro: SSD.',
+            productoCaracteristicas: '¡Siente toda la potencia de un clic en tus manos con Lenovo!Esta exclusiva marca pone a tu alcance su amplia línea de accesorios de computación para que realices tus labores con comodidad y eficiencia. Vive una experiencia única con el mouse Ideapad Gaming M100 Rgb diseñado para brindarte un alto rendimiento al competir.Todos los productos que Lenovo tiene para ti han sido fabricados con altos estándares de calidad y tecnología de punta.',
+            productoEspecificaciones: [
+                'Marca	LENOVO',
+                'Tipo de Producto	Accesorios Cómputo',
+                'Modelo	IdeaPad Gaming M100 RGB',
+                'Compatibilidad	Windows 7, Windows 10',
+                'Incluye batería	No',
+                'Utiliza Baterías	No'
+            ],
+            productoPrecio: 39.90,
+            productoImagen: img43
+        },{
+            productoNombre: 'Mouse Logitech G blanco',
+            productoDescripcion: 'Sensor: HERO™ Resolución: 100 – 25.600 DPI Aceleración máxima: >40 G 2 Pruebas realizadas sobre alfombrilla de mouse Logitech G240 para juegos',
+            productoCaracteristicas: 'Domina el mundo del juego con la potencia combinada de los procesadores Intel® CoreTM de 11.a generación y los gráficos NVIDIA® GeForce GTX1. Configure su computadora portátil para máxima velocidad y almacenamiento masivo con dos ranuras para SSD M.2 PCIe / SATA1 (hasta 1TB Raid 0 / 2TB HDD) y hasta 32GB de RAM DDR4.Domine el mundo de los videojuegos con la potencia y el rendimiento de los gráficos NVIDIA® GeForce® GTX 1650 con las capacidades de la arquitectura NVIDIA® Turing®¹.Obtenga una ventaja en línea tomando el control de su red y priorizando su juego con Killer™ Ethernet E2600 e Intel® Wi-Fi 61. Conecte todos sus periféricos a la gama completa de puertos, incluidos HDMI 2.0 y el estándar USB 3.2 más nuevo con Gen1 y 2 soporte1.',
+            productoEspecificaciones: [
+                'Marca	LOGITECH G',
+                'Batería Recargable	No',
+                'Inalámbrico	Sí',
+                'Modelo	PRO X SUPERLIGHT',
+                'Contenido	Mouse y Manual de usuario',
+                'Conectividad	Inalambrico'
+            ],
+            productoPrecio: 250.00,
+            productoImagen: img44
+        },
+        {
+            productoNombre: 'Mouse Logitech G203 RGB blanco',
+            productoDescripcion: 'Sensor: HERO™ Resolución: 100 – 25.600 DPI Aceleración máxima: >40 G 2 Pruebas realizadas sobre alfombrilla de mouse Logitech G240 para juegos',
+            productoCaracteristicas: 'Domina el mundo del juego con la potencia combinada de los procesadores Intel® CoreTM de 11.a generación y los gráficos NVIDIA® GeForce GTX1. Configure su computadora portátil para máxima velocidad y almacenamiento masivo con dos ranuras para SSD M.2 PCIe / SATA1 (hasta 1TB Raid 0 / 2TB HDD) y hasta 32GB de RAM DDR4.Domine el mundo de los videojuegos con la potencia y el rendimiento de los gráficos NVIDIA® GeForce® GTX 1650 con las capacidades de la arquitectura NVIDIA® Turing®¹.Obtenga una ventaja en línea tomando el control de su red y priorizando su juego con Killer™ Ethernet E2600 e Intel® Wi-Fi 61. Conecte todos sus periféricos a la gama completa de puertos, incluidos HDMI 2.0 y el estándar USB 3.2 más nuevo con Gen1 y 2 soporte1.',
+            productoEspecificaciones: [
+                'Marca	LOGITECH G',
+                'Batería Recargable	No',
+                'Inalámbrico	Sí',
+                'Modelo	PRO X SUPERLIGHT',
+                'Contenido	Mouse y Manual de usuario',
+                'Conectividad	Inalambrico'
+            ],
+            productoPrecio: 170.00,
+            productoImagen: img45
+        },
+        {
+            productoNombre: 'Mouse Logitech G203 RGB morado',
+            productoDescripcion: 'Sensor: HERO™ Resolución: 100 – 25.600 DPI Aceleración máxima: >40 G 2 Pruebas realizadas sobre alfombrilla de mouse Logitech G240 para juegos',
+            productoCaracteristicas: 'Domina el mundo del juego con la potencia combinada de los procesadores Intel® CoreTM de 11.a generación y los gráficos NVIDIA® GeForce GTX1. Configure su computadora portátil para máxima velocidad y almacenamiento masivo con dos ranuras para SSD M.2 PCIe / SATA1 (hasta 1TB Raid 0 / 2TB HDD) y hasta 32GB de RAM DDR4.Domine el mundo de los videojuegos con la potencia y el rendimiento de los gráficos NVIDIA® GeForce® GTX 1650 con las capacidades de la arquitectura NVIDIA® Turing®¹.Obtenga una ventaja en línea tomando el control de su red y priorizando su juego con Killer™ Ethernet E2600 e Intel® Wi-Fi 61. Conecte todos sus periféricos a la gama completa de puertos, incluidos HDMI 2.0 y el estándar USB 3.2 más nuevo con Gen1 y 2 soporte1.',
+            productoEspecificaciones: [
+                'Marca	LOGITECH G',
+                'Batería Recargable	No',
+                'Inalámbrico	Sí',
+                'Modelo	PRO X SUPERLIGHT',
+                'Contenido	Mouse y Manual de usuario',
+                'Conectividad	Inalambrico'
+            ],
+            productoPrecio: 180.00,
+            productoImagen: img46
+        },
+        {
+            productoNombre: 'Teclado gaming Logitech G PRO',
+            productoDescripcion: 'Procesador: Intel Core i5. Memoria RAM: 8GB. Disco duro: 512GB. Tarjeta gráfica: NVIDIA GeForce GTX 1650. Tipo de disco duro: SSD.',
+            productoCaracteristicas: '	Diseño de diez teclas sin inspiración profesional.Interruptores mecánicos Clicky GX Blu,Iluminación LIGHTSYNC RGB 	Cable desmontable de 1,8 m',
+            productoEspecificaciones: [
+                'Marca	ACER',
+                'Modelo	AN515-57-57U5',
+                'Memoria RAM	8GB',
+                'Disco duro	512GB',
+                'Tarjeta gráfica	NVIDIA GeForce GTX 1650',
+                'Sistema operativo	Windows 11 Home'
+            ],
+            productoPrecio: 430.00,
+            productoImagen: img47
+        },{
+            productoNombre: 'Teclado Logitech K380 ROSE',
+            productoDescripcion: ' Las teclas tienen la forma de tus dedos, mientras que el diseño contemporáneo garantiza clics discretos y fluidos. Moderniza tu escritorio desde donde quieras con una nueva gama de colores',
+            productoCaracteristicas: 'El teclado K380 multidispositivo, inalámbrico y Bluetooth te sigue a donde vayas. Con un fino diseño portátil, te brinda la comodidad y la facilidad de teclear desde el ordenador, desde tu tablet o teléfono. Conecta hasta tres dispositivos a la vez y pasa al ordenador a la tableta con solo tocar un botón gracias al diseño Easy-Switch. Es compatible con Windows, Mac, iPadOS, Chrome OS, Android, iOS (iPhone y iPad), Apple TV y más. Disfruta de la facilidad del portátil estés donde estés.',
+            productoEspecificaciones: [
+                'Es compatible con Windows, Mac, iPadOS, Chrome OS, Android, iOS (iPhone y iPad), Apple TV y más.',
+                'Las teclas están dispuestas con un diseño que se adapta a ti para ocupar poco espacio.',
+                'Las teclas tienen la forma de tus dedos, mientras que el diseño contemporáneo garantiza clics discretos y fluidos',
+                'Trae dos baterías alcalinas AAA preinstaladas',
+                'Tarjeta gráfica	NVIDIA GeForce GTX 1650',
+                'La batería dura hasta dos años'
+            ],
+            productoPrecio: 119.00,
+            productoImagen: img48
+        },
+    
     ]
 
     const currentData = data[productID];// Obtener los datos del producto actual utilizando el ID del producto

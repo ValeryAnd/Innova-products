@@ -86,52 +86,52 @@ export default function Celulares() {
                         </div>
                     </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${30}`}>
                         <img src={img7} alt=""/>
                         <div className={styles.newText}>
                             <h5>Huawei</h5>
                             <h4>Huawei Nova 11I 6.8" 8GB 128GB 48MP + 2MP Black bundle freebuds SE</h4>
                             <p>S/999.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${31}`}>
                         <img src={img8} alt=""/>
                         <div className={styles.newText}>
                             <h5>Apple</h5>
                             <h4>Apple Iphone 14 6.1" 128GB 12MP + 12MP azul</h4>
                             <p>S/3,799.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${32}`}>
                         <img src={img9} alt=""/>
                         <div className={styles.newText}>
                             <h5>OPPO</h5>
                             <h4>Oppo A57 6.56" 4GB 128GB 13MP F/2.2 green</h4>
                             <p>S/739.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${33}`}>
                         <img src={img10} alt=""/>
                         <div className={styles.newText}>
                             <h5>HONOR</h5>
                             <h4>Honor X8A 6.7" 8GB 128GB 100M+5M+2M black</h4>
                             <p>S/929.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${34}`}>
                         <img src={img11} alt=""/>
                         <div className={styles.newText}>
                             <h5>SAMSUNG</h5>
                             <h4>Samsung Galaxy S23 6.1" 8GB 256GB 50MP + 10MP + 12MP SM-S911BZGMLTP verde</h4>
                             <p>S/4,299.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${35}`}>
                         <img src={img12} alt=""/>
                         <div className={styles.newText}>
                             <h5>SAMSUNG</h5>
@@ -141,7 +141,7 @@ export default function Celulares() {
                             </h4>
                             <p>S/5,199.00</p>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </section>
 

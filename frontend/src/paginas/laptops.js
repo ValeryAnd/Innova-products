@@ -82,33 +82,33 @@ export default function Laptops() {
                         </div>
                     </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${36}`}>
                         <img src={img7} alt=""></img>
                         <div className={styles.newText}>
                             <h5>HP</h5>
                             <h4>Laptop HP amd Ryzen 5 8GB</h4>
                             <p>S/1,959.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${37}`}>
                         <img src={img8} alt=""></img>
                         <div className={styles.newText}>
                             <h5>Lenovo</h5>
                             <h4>Lenovo IDEAPAD 5I Intel core I7 12GB RAM 512GB SSD 15.6" FHD</h4>
                             <p> S/2,999.00</p>
                         </div>
-                    </div>
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    </Link>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${38}`}>
                         <img src={img9} alt=""></img>
                         <div className={styles.newText}>
                             <h5>Lenovo</h5>
                             <h4>Laptop Lenovo IDEAPAD GAMING 3 AMD Ryzen 5 16GB RAM 512GB SSD 15.6''</h4>
                             <p>S/3,799.00</p>
                         </div>
-                    </div>
+                    </Link >
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${39}`}>
                         <img src={img10} alt=""></img>
                         <div className={styles.newText}>
                             <h5>ASUS</h5>
@@ -116,18 +116,18 @@ export default function Laptops() {
                                 15.6''</h4>
                             <p>S/2,599.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${40}`}>
                         <img src={img11} alt=""></img>
                         <div className={styles.newText}>
                             <h5>Apple</h5>
                             <h4>Laptop Apple Macbook air 13' con chip M2 (2022) 8GB RAM 2TB SSD - plateado</h4>
                             <p>S/9,649.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={`${styles.rowThree} ${styles.imge}`}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${41}`}>
                         <img src={img12} alt=""></img>
                         <div className={styles.newText}>
                             <h5>Acer</h5>
@@ -135,7 +135,7 @@ export default function Laptops() {
                                 4GB</h4>
                             <p>S/2,799.00</p>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </section>
 
