@@ -135,41 +135,41 @@ export default function Productos() {
                 </div>
 
                 <div className={styles.products}>
-                    <div className={styles.rowThree}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${0}`}>
                         <img src={new1} alt=""></img>
                         <div className={styles.newText}>
                             <h5>Apple</h5>
                             <h4>AirPods 3era generación</h4>
                             <p>S/799.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={styles.rowThree}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${18}`}>
                         <img src={new2} alt=""></img>
                         <div className={styles.newText}>
                             <h5>LOGITECH</h5>
                             <h4>Logitech teclado Bluetooth</h4>
                             <p>S/150.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={styles.rowThree}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${13}`}>
                         <img src={new3} alt=""></img>
                         <div className={styles.newText}>
                             <h5>SAMSUNG</h5>
                             <h4>Samsung galaxy Tab S6 Lite</h4>
                             <p>S/2,999</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={styles.rowThree}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${31}`}>
                         <img src={new4} alt=""></img>
                         <div className={styles.newText}>
                             <h5>Apple</h5>
                             <h4>Apple iphone 14 6.1"128GB 12MP+12MP AZUL</h4>
                             <p>S/3,799</p>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </section>
 
@@ -179,41 +179,41 @@ export default function Productos() {
                 </div>
 
                 <div className={styles.products}>
-                    <div className={styles.rowThree}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${36}`}>
                         <img src={last1} alt=""></img>
                         <div className={styles.newText}>
                             <h5>HP</h5>
                             <h4>Laptop HP amd Ryzen 5 8GB</h4>
                             <p>S/1,959.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={styles.rowThree}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${19}`}>
                         <img src={last2} alt=""></img>
                         <div className={styles.newText}>
                             <h5>LOGITECH</h5>
                             <h4>Mouse Logitech G Pro x super ligero inalámbrico - blanco</h4>
                             <p>S/150.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={styles.rowThree}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${12}`}>
                         <img src={last3} alt=""></img>
                         <div className={styles.newText}>
                             <h5>SAMSUNG</h5>
                             <h4>Tablet samsung galaxy TAB S7 - Verde mistico</h4>
                             <p>S/949.00</p>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className={styles.rowThree}>
+                    <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${5}`}>
                         <img src={last4} alt=""></img>
                         <div className={styles.newText}>
                             <h5>PHILIPS</h5>
                             <h4>Audífonos philips on ear con micrófono blanco</h4>
                             <p>S/59.40</p>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </section>
 
