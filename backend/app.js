@@ -5,7 +5,7 @@ const cors = require('cors')// Middleware para habilitar el Cross-Origin Resourc
 //URL ENCODER
 app.use(express.urlencoded({extended: false}));// Framework de Node.js para crear aplicaciones web
 app.use(express.json());// Middleware para parsear los datos JSON enviados en las solicitudes HTTP
-app.use(cors({origin: 'http://localhost:3000'}))// Habilitar el CORS para permitir peticiones desde http://localhost:3000
+app.use(cors({origin: 'https://zingy-swan-de2784.netlify.app/'}))// Habilitar el CORS para permitir peticiones desde http://localhost:3000
 app.disable("x-powered-by");// Deshabilitar la cabecera "x-powered-by" para mayor seguridad
 
 //INVOCAR A DOTENV
