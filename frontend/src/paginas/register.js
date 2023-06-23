@@ -22,7 +22,7 @@ export default function Register() {
         };
 
         try {
-            const url = 'http://localhost:5000/register';
+            const url = 'https://innova-products.onrender.com//register';
             const response = await axios.post(url, data);// Realizar la petición POST para registrar al usuario
             console.log(response)
             navegacion('/')// Redirigir al usuario a la página de inicio después del registro exitoso

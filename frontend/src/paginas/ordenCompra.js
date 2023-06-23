@@ -73,7 +73,7 @@ export default function OrdenCompra() {
         }
 
         // Enviamos datos a la API
-        fetch('http://localhost:5000/validarCompra', {
+        fetch('https://innova-products.onrender.com/validarCompra', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

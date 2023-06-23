@@ -18,7 +18,7 @@ export default function Login() {
         };
 
         try {
-            const url = 'http://localhost:5000/login';
+            const url = 'https://innova-products.onrender.com//login';
             const response = await axios.post(url, data);// Realizar la petición POST para validar el inicio de sesión
             console.log(response)// Redirigir al usuario a la página de productos después de un inicio de sesión exitoso
             navegacion('/productos')
