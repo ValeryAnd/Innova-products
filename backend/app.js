@@ -36,59 +36,78 @@ app.listen(5000, () => {
 })
 // Definir una ruta para el registro de usuarios
 app.post('/register', async (req, res) => {
-    // Obtener los datos del cuerpo de la solicitud
-    const nombres = req.body.nombres;
-    const apellidos = req.body.apellidos;
-    const correo = req.body.email;
-    const pass = req.body.password;
-    const passwordHash = await bcryptjs.hash(pass, 8);
-    // Verificar si el correo ya está registrado en la base de datos
-    connection.query('SELECT * FROM users WHERE correo = ?', [correo], async (error, results) => {
+    try {
+      // Obtener los datos del cuerpo de la solicitud
+      const nombres = req.body.nombres;
+      const apellidos = req.body.apellidos;
+      const correo = req.body.email;
+      const pass = req.body.password;
+      const passwordHash = await bcryptjs.hash(pass, 8);
+  
+      // Verificar si el correo ya está registrado en la base de datos
+      connection.query('SELECT * FROM users WHERE correo = ?', [correo], async (error, results) => {
         if (error) {
-            console.log(error);
+          console.log(error);
+          throw error; // Lanzar el error para que sea capturado por el bloque catch
         } else {
-            if (results.length > 0) {
-                res.status(409).send({message: 'El correo ya está registrado'});
-            } else {
-                // Insertar los datos del nuevo usuario en la base de datos
-                connection.query('INSERT INTO users SET ?', {
-                    nombres: nombres,
-                    apellidos: apellidos,
-                    correo: correo,
-                    password: passwordHash
-                }, async (error, results) => {
-                    if (error) {
-                        console.log(error);
-                    } else {
-                        console.log(results)
-                        res.status(201).send({message: 'Registro exitoso'});
-                    }
-                });
-            }
+          if (results.length > 0) {
+            res.status(409).send({ message: 'El correo ya está registrado' });
+          } else {
+            // Insertar los datos del nuevo usuario en la base de datos
+            connection.query('INSERT INTO users SET ?', {
+              nombres: nombres,
+              apellidos: apellidos,
+              correo: correo,
+              password: passwordHash
+            }, async (error, results) => {
+              if (error) {
+                console.log(error);
+                throw error; // Lanzar el error para que sea capturado por el bloque catch
+              } else {
+                console.log(results)
+                res.status(201).send({ message: 'Registro exitoso' });
+              }
+            });
+          }
         }
-    });
-});
+      });
+    } catch (error) {
+      console.log(error);
+      res.status(500).send({ message: 'Error interno del servidor' }); // Responder con un mensaje de error al cliente
+    }
+  });
 // Definir una ruta para el inicio de sesión de usuarios
 app.post('/login', async (req, res) => {
-    // Obtener los datos del cuerpo de la solicitud
-    const correo = req.body.email;
-    const pass = req.body.password;
-
-    if (correo && pass) {
+    try {
+      // Obtener los datos del cuerpo de la solicitud
+      const correo = req.body.email;
+      const pass = req.body.password;
+  
+      if (correo && pass) {
         // Verificar si el correo y la contraseña coinciden con un usuario en la base de datos
         connection.query('SELECT * FROM users WHERE correo = ?', correo, async (error, results) => {
+          if (error) {
+            console.log(error);
+            throw error; // Lanzar el error para que sea capturado por el bloque catch
+          } else {
             if (results.length === 0 || !(await bcryptjs.compare(pass, results[0].password))) {
-                res.status(400).send({message: "Usuario o contraseña incorrectos"})
+              res.status(400).send({ message: "Usuario o contraseña incorrectos" });
             } else {
-                res.status(201).send({message: "Login correcto"})
+              res.status(201).send({ message: "Login correcto" });
             }
+          }
         });
+      }
+    } catch (error) {
+      console.log(error);
+      res.status(500).send({ message: 'Error interno del servidor' }); // Responder con un mensaje de error al cliente
     }
-})
+  });
 // Definir una ruta para validar una compra
 app.post('/validarCompra', async (req, res) => {
-    // Obtener los datos del cuerpo de la solicitud
-    const {
+    try {
+      // Obtener los datos del cuerpo de la solicitud
+      const {
         nombres,
         correo,
         apellidos,
@@ -103,17 +122,17 @@ app.post('/validarCompra', async (req, res) => {
         subtotal,
         descuento,
         total
-    } = req.body;
-    // Validar la tarjeta, el CVV y la fecha de caducidad
-    const tarjetaValida = validarTarjeta(numeroTarjeta);
-    const cvvValido = validarCVV(cvv);
-    const fechaCaducidadValida = validarFechaCaducidad(fechaCaducidad);
-    // Verificar si los datos de la tarjeta no son válidos
-    if (!tarjetaValida || !cvvValido || !fechaCaducidadValida) {
-        return res.status(400).json({message: 'Pago inválido. Por favor, verifique los detalles de su tarjeta.'});
-    }
-    // Insertar los datos de la venta en la base de datos
-    connection.query('INSERT INTO ventas SET ?', {
+      } = req.body;
+      // Validar la tarjeta, el CVV y la fecha de caducidad
+      const tarjetaValida = validarTarjeta(numeroTarjeta);
+      const cvvValido = validarCVV(cvv);
+      const fechaCaducidadValida = validarFechaCaducidad(fechaCaducidad);
+      // Verificar si los datos de la tarjeta no son válidos
+      if (!tarjetaValida || !cvvValido || !fechaCaducidadValida) {
+        return res.status(400).json({ message: 'Pago inválido. Por favor, verifique los detalles de su tarjeta.' });
+      }
+      // Insertar los datos de la venta en la base de datos
+      connection.query('INSERT INTO ventas SET ?', {
         ordenID: generarIdUnico(),
         nombres: nombres,
         apellidos: apellidos,
@@ -126,15 +145,20 @@ app.post('/validarCompra', async (req, res) => {
         subtotal: subtotal,
         descuento: descuento,
         total: total
-    }, async (error, result) => {
+      }, async (error, result) => {
         if (error) {
-            console.log(error);
+          console.log(error);
+          throw error; // Lanzar el error para que sea capturado por el bloque catch
         } else {
-            console.log(result)
-            res.status(201).send({message: 'Venta registrada...'});
+          console.log(result);
+          res.status(201).send({ message: 'Venta registrada...' });
         }
-    })
-})
+      });
+    } catch (error) {
+      console.log(error);
+      res.status(500).send({ message: 'Error interno del servidor' }); // Responder con un mensaje de error al cliente
+    }
+  });
 
 // Función para validar una tarjeta (usada en la función '/validarCompra')
 function validarTarjeta(numeroTarjeta) {
