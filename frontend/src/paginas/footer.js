@@ -15,17 +15,17 @@ export default function Footer() {
                 <li><Link to='/'>Ultimo Stock</Link></li>
                 <li><Link to='/'>Contact us</Link>
                     <ul>
-                        <li><Link to='/'>
+                        <li><Link to='https://www.instagram.com/'>
                             <FaInstagram size={24}></FaInstagram>
                         </Link>
                         </li>
                         <li>
-                            <Link to='/'>
+                            <Link to='https://www.facebook.com/'>
                                 <FaFacebookSquare size={24}></FaFacebookSquare>
                             </Link>
                         </li>
                         <li>
-                            <Link to='/'>
+                            <Link to='https://www.tiktok.com/upload?lang=es'>
                                 <FaTiktok size={24}></FaTiktok>
                             </Link>
                         </li>
