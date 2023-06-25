@@ -841,7 +841,7 @@ export default function Agregar() {
         },
         {
             productoNombre: 'Teclado gaming Logitech G PRO',
-            productoDescripcion: 'Procesador: Intel Core i5. Memoria RAM: 8GB. Disco duro: 512GB. Tarjeta gráfica: NVIDIA GeForce GTX 1650. Tipo de disco duro: SSD.',
+            productoDescripcion: 'Las teclas tienen la forma de tus dedos, mientras que el diseño contemporáneo garantiza clics discretos y fluidos. Moderniza tu escritorio desde donde quieras con una nueva gama de colores',
             productoCaracteristicas: '	Diseño de diez teclas sin inspiración profesional.Interruptores mecánicos Clicky GX Blu,Iluminación LIGHTSYNC RGB 	Cable desmontable de 1,8 m',
             productoEspecificaciones: [
                 'Marca	ACER',
