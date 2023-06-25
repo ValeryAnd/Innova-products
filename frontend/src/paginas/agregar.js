@@ -910,7 +910,7 @@ export default function Agregar() {
     return (
         <main>
             <Header/>
-    
+
             <section className={styles.itemContainer}>
                 <div className={styles.imgContainer}>
                     <img src={currentData.productoImagen} alt='img'></img>
