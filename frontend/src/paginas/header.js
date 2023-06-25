@@ -32,11 +32,6 @@ export default function Header() {
                     <FaShoppingCart size={20}></FaShoppingCart>
                     <span></span>
                 </Link>
-                <div id="menu-icon">
-                    <Link to='/'>
-                        <FaBars size={20}></FaBars>
-                    </Link>
-                </div>
             </div>
         </header>
         
