@@ -193,15 +193,6 @@ header.sticky {
 
 .productText {
     text-transform: uppercase;
-    padding: 20px 0;
-}
-
-/* Estilos para el ícono de compra */
-.buyIcon {
-    position: relative;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
 }
 
 /* Estilos para los enlaces de compra */

@@ -59,52 +59,27 @@ export default function Productos() {
                         <Link to="/productos/audifonos">
                             <img src={audIMG} alt=""></img>
                         </Link>
-                        <div className={styles.productText}>
-                            <h4>Audifonos</h4>
-                            <div className={styles.buyIcon}>
-                                <Link to="/productos/audifonos">Comprar</Link>
-                                <MdOutlineKeyboardArrowRight size={24}></MdOutlineKeyboardArrowRight>
-                            </div>
-                        </div>
                     </div>
 
                     <div className={styles.row}>
                         <Link to="/productos/celulares">
                             <img src={celIMG} alt=""></img>
                         </Link>
-                        <div className={styles.productText}>
-                            <h4>Celulares</h4>
-                            <div className={styles.buyIcon}>
-                                <Link to="/productos/celulares">Comprar</Link>
-                                <MdOutlineKeyboardArrowRight size={24}></MdOutlineKeyboardArrowRight>
-                            </div>
-                        </div>
+                        
                     </div>
 
                     <div className={styles.row}>
                         <Link to="/productos/laptops">
                             <img src={tabIMG} alt=""></img>
                         </Link>
-                        <div className={styles.productText}>
-                            <h4>Laptops Y <br></br> Tablets</h4>
-                            <div className={styles.buyIcon}>
-                                <Link to="/productos/laptops">Comprar</Link>
-                                <MdOutlineKeyboardArrowRight size={24}></MdOutlineKeyboardArrowRight>
-                            </div>
-                        </div>
+                        
                     </div>
 
                     <div className={styles.row}>
                         <Link to="/productos/accesorios">
                             <img src={accIMG} alt=""></img>
                         </Link>
-                        <div className={styles.productText}>
-                            <h4>Accesorios</h4>
-                            <div className={styles.buyIcon}>
-                                <Link to="/productos/accesorios">Comprar</Link>
-                                <MdOutlineKeyboardArrowRight size={24}></MdOutlineKeyboardArrowRight>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
