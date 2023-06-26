@@ -36,6 +36,7 @@
 
 .infoContainer p {
     font-size: 18px;
+    text-align: justify;
 }
 .productInfoContainer h1 {
     font-size: 32px;
@@ -86,10 +87,6 @@
 
 .featuresContainer h1{
     margin-bottom: 50px;
-}
-
-.infoContainer p{
-    text-align: justify;
 }
 
 .especificationsContainer {
