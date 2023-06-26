@@ -32,13 +32,6 @@ main {
 .mainText {
     width: 40%;
 }
-
-.row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 /* Estilos para el subtitulo */
 .feauterSubtitle {
     padding: 10px 0;

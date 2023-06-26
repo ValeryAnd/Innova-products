@@ -5,7 +5,6 @@ import styles from '../estilos/productos.module.css'
 
 //Importamos los iconos a utilizar
 import {FaArrowDown, FaTruckMoving, FaTruckLoading, FaCreditCard} from 'react-icons/fa'
-import {MdOutlineKeyboardArrowRight} from 'react-icons/md'
 
 //Importamos las imagenes a utilizar
 import audIMG from '../imagenes/pexels-cottonbro-studio-3945667-removebg-preview.png'

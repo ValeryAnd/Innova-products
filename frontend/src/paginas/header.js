@@ -2,7 +2,7 @@ import logo from '../imagenes/logo1.png';
 import {Link} from "react-router-dom";
 import styles from '../estilos/header.module.css'
 //Importamos los iconos a utilizar
-import {FaUserAlt, FaShoppingCart, FaBars} from 'react-icons/fa'
+import {FaUserAlt, FaShoppingCart} from 'react-icons/fa'
 import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
 
 export default function Header() {
