@@ -58,6 +58,7 @@ import new3 from '../imagenes/2004311980721-1.jpg'
 import last3 from '../imagenes/tablet.png'
 import last4 from '../imagenes/audifonos6.jpg'
 
+
 import {useLocation} from "react-router-dom";
 
 export default function Agregar() {
@@ -948,7 +949,7 @@ export default function Agregar() {
                 </div>
                 <div className={styles.products}>
                     <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${1}`}>
-                        <img src={img24} alt=""/>
+                        <img src={img1} alt=""/>
                         <div className={styles.newText}>
                             <h5>SONY</h5>
                             <h4>Audífonos Sony WH-1000XM4 BT</h4>
