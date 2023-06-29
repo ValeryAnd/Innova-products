@@ -23,6 +23,7 @@ export default function Login() {
             console.log(response)// Redirigir al usuario a la página de productos después de un inicio de sesión exitoso
             navegacion('/productos')
         } catch (error) {
+            alert(error.response.data.message)
             console.log(error)
         }
     };

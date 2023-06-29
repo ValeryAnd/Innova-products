@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from './header';
 import {Link} from "react-router-dom";
 import styles from '../estilos/productos.module.css'
@@ -13,6 +13,7 @@ import tabIMG from '../imagenes/2004288571427_2-removebg-preview.png'
 import accIMG from '../imagenes/mouse3-removebg-preview.png'
 import com1 from '../imagenes/comentario1.jpeg'
 import com2 from '../imagenes/comentario2.jpeg'
+import com3 from '../imagenes/comentario3.jpg'
 import new1 from '../imagenes/klim-musalimov-pCJYFw8dSnE-unsplash-removebg-preview.png'
 import new2 from '../imagenes/stefen-tan-KYw1eUx1J7Y-unsplash-removebg-preview.png'
 import new3 from '../imagenes/2004311980721-1.jpg'
@@ -24,6 +25,13 @@ import last4 from '../imagenes/audifonos6.jpg'
 import Footer from "./footer";
 
 export default function Productos() {
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({behavior: 'smooth'});
+        }
+    };
+
     return (
         <main>
             <Header/>
@@ -42,7 +50,7 @@ export default function Productos() {
                 </div>
 
                 <div className={styles.downArrow}>
-                    <Link to='#shop' className={styles.down}>
+                    <Link to='#' onClick={() => scrollToSection('shop')} className={styles.down}>
                         <FaArrowDown size={24}></FaArrowDown>
                     </Link>
                 </div>
@@ -64,21 +72,21 @@ export default function Productos() {
                         <Link to="/productos/celulares">
                             <img src={celIMG} alt=""></img>
                         </Link>
-                        
+
                     </div>
 
                     <div className={styles.row}>
                         <Link to="/productos/laptops">
                             <img src={tabIMG} alt=""></img>
                         </Link>
-                        
+
                     </div>
 
                     <div className={styles.row}>
                         <Link to="/productos/accesorios">
                             <img src={accIMG} alt=""></img>
                         </Link>
-                        
+
                     </div>
                 </div>
             </section>
@@ -98,7 +106,7 @@ export default function Productos() {
                     </div>
 
                     <div className={styles.rowTwo}>
-                        <img src={com1} alt=""></img>
+                        <img src={com3} alt=""></img>
                     </div>
                 </div>
             </section>

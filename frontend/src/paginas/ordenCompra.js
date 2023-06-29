@@ -3,6 +3,7 @@ import Footer from "./footer"
 import styles from '../estilos/carrito.module.css'
 import {useEffect} from "react"
 import {useNavigate} from "react-router-dom"
+import axios from "axios";
 
 export default function OrdenCompra() {
     const navegacion = useNavigate()
@@ -41,7 +42,7 @@ export default function OrdenCompra() {
         totalText.innerText = "S/. " + total.toFixed(2)
     }, [])
 
-    function finalizarCompra() {
+    async function finalizarCompra() {
         const nombres = document.getElementById('nombres').value
         const correo = document.getElementById('correo').value
         const apellidos = document.getElementById('apellidos').value
@@ -72,31 +73,16 @@ export default function OrdenCompra() {
             total: ordenCompra.total
         }
 
-        // Enviamos datos a la API
-        fetch('https://innova-products.onrender.com/validarCompra', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(ordenCompraData)
-        })
-            .then(response => {
-                if (response.ok) {
-                    localStorage.removeItem('carrito')
-                    localStorage.removeItem('ordenCompra')
-                    navegacion('/confirmacion')
-                } else {
-                    return response.json()
-                }
-            })
-            .then(data => {
-                if (data.message) {
-                    console.log(data.message)
-                }
-            })
-            .catch(error => {
-                console.error('Error de servidor:', error)
-            })
+        try {
+            const response = await axios.post('https://innova-products.onrender.com/validarCompra', ordenCompraData)
+            console.log(response)
+            localStorage.removeItem('carrito');
+            localStorage.removeItem('ordenCompra');
+            navegacion('/confirmacion');
+        } catch (error) {
+            alert(error.response.data.message);
+            console.log(error)
+        }
     }
 
     return (
@@ -110,19 +96,19 @@ export default function OrdenCompra() {
                     <div className={styles.detallesFacturacion}>
                         <div>
                             <label htmlFor="nombres">Nombres:</label>
-                            <input type="text" id="nombres"></input>
+                            <input type="text" id="nombres" required></input>
                         </div>
                         <div>
                             <label htmlFor="correo">Correo electrónico:</label>
-                            <input type="text" id="correo"></input>
+                            <input type="text" id="correo" required></input>
                         </div>
                         <div>
                             <label htmlFor="apellidos">Apellidos:</label>
-                            <input type="text" id="apellidos"></input>
+                            <input type="text" id="apellidos" required></input>
                         </div>
                         <div>
                             <label htmlFor="telefono">Teléfono:</label>
-                            <input type="text" id="telefono"></input>
+                            <input type="text" id="telefono" required></input>
                         </div>
                     </div>
 
@@ -130,15 +116,15 @@ export default function OrdenCompra() {
                     <div className={styles.detallesEnvio}>
                         <div className={styles.envioDireccion}>
                             <label htmlFor="direccion">Dirección:</label>
-                            <input type="text" id="direccion"></input>
+                            <input type="text" id="direccion" required></input>
                         </div>
                         <div>
                             <label htmlFor="distrito">Distrito:</label>
-                            <input type="text" id="distrito"></input>
+                            <input type="text" id="distrito" required></input>
                         </div>
                         <div>
                             <label htmlFor="ciudad">Ciudad:</label>
-                            <input type="text" id="ciudad"></input>
+                            <input type="text" id="ciudad" required></input>
                         </div>
                     </div>
 
@@ -160,15 +146,15 @@ export default function OrdenCompra() {
                         </div>
                         <div>
                             <label>Número de tarjeta:</label>
-                            <input type="text" id="numero-tarjeta"></input>
+                            <input type="text" id="numero-tarjeta" required></input>
                         </div>
                         <div>
                             <label>Fecha de caducidad:</label>
-                            <input type="text" id="fecha-caducidad"></input>
+                            <input type="text" id="fecha-caducidad" required></input>
                         </div>
                         <div>
                             <label>CVV:</label>
-                            <input type="text" id="cvv"></input>
+                            <input type="text" id="cvv" required></input>
                         </div>
                     </div>
                 </div>
