@@ -31,7 +31,7 @@ export default function Header() {
                 </li>
             </ul>
             <div className={styles.navIcon}>
-                <Link to="/productos">
+                <Link to='/'>
                     <FaUserAlt size={20}></FaUserAlt>
                 </Link>
                 <Link to="/carrito">
