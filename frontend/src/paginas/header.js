@@ -3,9 +3,16 @@ import {Link} from "react-router-dom";
 import styles from '../estilos/header.module.css'
 //Importamos los iconos a utilizar
 import {FaUserAlt, FaShoppingCart} from 'react-icons/fa'
-import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
+import {useEffect} from "react";
 
 export default function Header() {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }, []);
+
     return (
         <header>
             <title>Innova Products</title>
@@ -13,8 +20,7 @@ export default function Header() {
             <ul className={styles.navMenu}>
                 <li><Link to="/productos">Inicio</Link></li>
                 <li className={styles.listProducts}>
-                    <Link to='/'>Productos
-                        <MdOutlineKeyboardArrowDown size={24} color='black'></MdOutlineKeyboardArrowDown>
+                    <Link to='/productos'>Productos
                     </Link>
                     <ul className={styles.contUl}>
                         <li><Link to="/productos/audifonos">Audífonos</Link></li>
@@ -25,7 +31,7 @@ export default function Header() {
                 </li>
             </ul>
             <div className={styles.navIcon}>
-                <Link to="/">
+                <Link to="/productos">
                     <FaUserAlt size={20}></FaUserAlt>
                 </Link>
                 <Link to="/carrito">
@@ -34,6 +40,7 @@ export default function Header() {
                 </Link>
             </div>
         </header>
-        
+
     );
 }
+

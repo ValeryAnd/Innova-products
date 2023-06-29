@@ -13,14 +13,7 @@ footer {
     text-align: center;
 }
 
-/* Estilos para los íconos en el pie de página */
-.footerIcon a{
-    color: white;
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
+
 /* Estilos para el menú del pie de página */
 .footerMenu {
     display: grid;
@@ -34,7 +27,7 @@ footer {
     align-items: center;
 }
 /* Estilos para los enlaces del menú del pie de página */
-.footerMenu a{
+.footerMenu a,.footerList{
     color: white;
     font-size: 15px;
     text-transform: uppercase;

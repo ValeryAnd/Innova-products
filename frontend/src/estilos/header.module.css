@@ -93,7 +93,7 @@ header {
 /* Estilos para la lista desplegable de productos */
 .contUl {
     position: absolute;
-    top: 100%;
+    top: 45px;
     left: 27px;
     width: 140px;
     background-color: white;

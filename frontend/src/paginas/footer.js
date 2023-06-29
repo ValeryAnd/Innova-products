@@ -6,14 +6,20 @@ import styles from '../estilos/footer.module.css'
 import {FaInstagram, FaFacebookSquare, FaTiktok} from 'react-icons/fa'
 
 export default function Footer() {
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({behavior: 'smooth'});
+        }
+    };
     return (
         <footer>
             <ul className={styles.footerMenu}>
-                <li><Link to='/'><img src={logo} alt="logo" className={styles.logo}></img></Link></li>
-                <li><Link to='/'>Inicio</Link></li>
-                <li><Link to='/'>New in</Link></li>
-                <li><Link to='/'>Ultimo Stock</Link></li>
-                <li><Link to='/'>Contact us</Link>
+                <li><Link to='#' onClick={() => scrollToSection('inicio')}><img src={logo} alt="logo" className={styles.logo}></img></Link></li>
+                <li><Link to='#' onClick={() => scrollToSection('inicio')}>Inicio</Link></li>
+                <li><Link to='#' onClick={() => scrollToSection('new')}>New in</Link></li>
+                <li><Link to='#' onClick={() => scrollToSection('stock')}>Ultimo Stock</Link></li>
+                <li className={styles.footerList}>Contact us
                     <ul>
                         <li><Link to='https://www.instagram.com/'>
                             <FaInstagram size={24}></FaInstagram>
