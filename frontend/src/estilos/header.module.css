@@ -66,9 +66,12 @@ header {
 .navMenu a:hover {
     color: #FF9858;
     border-radius: 40px;
-    cursor: pointer;
-
 }
+
+.navMenu a:hover, .listProducts p:hover{
+    cursor: pointer;
+}
+
 
 /* Estilos para los iconos de navegación */
 .navIcon {
