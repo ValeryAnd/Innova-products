@@ -6,12 +6,6 @@ import styles from '../estilos/footer.module.css'
 import {FaInstagram, FaFacebookSquare, FaTiktok} from 'react-icons/fa'
 
 export default function Footer() {
-    const scrollToSection = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({behavior: 'smooth'});
-        }
-    };
     return (
         <footer>
             <ul className={styles.footerMenu}>
