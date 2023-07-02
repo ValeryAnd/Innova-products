@@ -52,7 +52,7 @@ header {
 }
 
 /* Estilos para los enlaces de navegación */
-.navMenu a {
+.navMenu a,.listProducts p {
     color: black;
     font-size: .9375rem;
     text-transform: uppercase;

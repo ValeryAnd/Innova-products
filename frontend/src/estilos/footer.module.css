@@ -40,6 +40,27 @@ footer {
 .footerMenu li {
     text-align: center;
 }
+
+.footerList p{
+    color: white;
+    text-transform: none;
+}
+
+.ListProducts, .footerList p, .contactUs {
+    padding-top: 15px;
+}
+.ListProducts li{
+    padding-bottom: 7px;
+}
+
+.ListProducts a{
+    text-transform: capitalize;
+}
+
+.ListProducts a:hover{
+    color: #FF9858;
+}
+
 /* Estilos para la sección de compra en el pie de página */
 .footerBuy {
     text-align: center;

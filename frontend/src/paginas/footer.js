@@ -15,12 +15,21 @@ export default function Footer() {
     return (
         <footer>
             <ul className={styles.footerMenu}>
-                <li><Link to='#' onClick={() => scrollToSection('inicio')}><img src={logo} alt="logo" className={styles.logo}></img></Link></li>
-                <li><Link to='#' onClick={() => scrollToSection('inicio')}>Inicio</Link></li>
-                <li><Link to='#' onClick={() => scrollToSection('new')}>New in</Link></li>
-                <li><Link to='#' onClick={() => scrollToSection('stock')}>Ultimo Stock</Link></li>
+                <li><Link to='/productos/'><img src={logo} alt="logo" className={styles.logo}></img></Link></li>
+                <li><Link to='/productos/'>Inicio</Link></li>
+                <li className={styles.footerList}>Productos
+                    <ul className={styles.ListProducts}>
+                        <li><Link to="/productos/audifonos">Audífonos</Link></li>
+                        <li><Link to="/productos/celulares">Celulares</Link></li>
+                        <li><Link to="/productos/laptops">Laptops/<br></br>Tablets</Link></li>
+                        <li><Link to="/productos/accesorios">Accesorios</Link></li>
+                    </ul>
+                </li>
+                <li className={styles.footerList}>Ubicanos
+                    <p>Av.Benavides 1948 - Santiago de Surco</p>
+                </li>
                 <li className={styles.footerList}>Contact us
-                    <ul>
+                    <ul className={styles.contactUs}>
                         <li><Link to='https://www.instagram.com/'>
                             <FaInstagram size={24}></FaInstagram>
                         </Link>

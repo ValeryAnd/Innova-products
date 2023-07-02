@@ -20,8 +20,8 @@ export default function Header() {
             <ul className={styles.navMenu}>
                 <li><Link to="/productos">Inicio</Link></li>
                 <li className={styles.listProducts}>
-                    <Link to='/productos'>Productos
-                    </Link>
+                    <p>Productos
+                    </p>
                     <ul className={styles.contUl}>
                         <li><Link to="/productos/audifonos">Audífonos</Link></li>
                         <li><Link to="/productos/celulares">Celulares</Link></li>

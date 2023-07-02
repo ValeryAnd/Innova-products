@@ -28,6 +28,7 @@ export default function Register() {
             navegacion('/')// Redirigir al usuario a la página de inicio después del registro exitoso
         } catch (error) {
             console.log(error)
+            alert(error.response.data.message)
         }
     };
 
