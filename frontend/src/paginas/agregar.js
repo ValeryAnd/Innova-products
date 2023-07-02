@@ -53,10 +53,6 @@ import img45 from '../imagenes/mouse6.jpg'
 import img46 from '../imagenes/mouse7.jpg'
 import img47 from '../imagenes/teclado4.jpg'
 import img48 from '../imagenes/teclado8.jpg'
-import new2 from '../imagenes/stefen-tan-KYw1eUx1J7Y-unsplash-removebg-preview.png'
-import new3 from '../imagenes/2004311980721-1.jpg'
-import last3 from '../imagenes/tablet.png'
-import last4 from '../imagenes/audifonos6.jpg'
 
 
 import {useLocation} from "react-router-dom";
@@ -958,7 +954,7 @@ export default function Agregar() {
                     </Link>
 
                     <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${18}`}>
-                        <img src={new2} alt=""></img>
+                        <img src={img18} alt=""></img>
                         <div className={styles.newText}>
                             <h5>LOGITECH</h5>
                             <h4>Logitech teclado Bluetooth</h4>
@@ -967,7 +963,7 @@ export default function Agregar() {
                     </Link>
 
                     <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${13}`}>
-                        <img src={new3} alt=""></img>
+                        <img src={img13} alt=""></img>
                         <div className={styles.newText}>
                             <h5>SAMSUNG</h5>
                             <h4>Samsung galaxy Tab S6 Lite</h4>
@@ -1008,7 +1004,7 @@ export default function Agregar() {
                     </Link>
 
                     <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${12}`}>
-                        <img src={last3} alt=""></img>
+                        <img src={img12} alt=""></img>
                         <div className={styles.newText}>
                             <h5>SAMSUNG</h5>
                             <h4>Tablet samsung galaxy TAB S7 - Verde mistico</h4>
@@ -1016,7 +1012,7 @@ export default function Agregar() {
                         </div>
                     </Link>
                     <Link className={`${styles.rowThree} ${styles.imge}`} to={`/agregar?productID=${5}`}>
-                        <img src={last4} alt=""></img>
+                        <img src={img24} alt=""></img>
                         <div className={styles.newText}>
                             <h5>PHILIPS</h5>
                             <h4>Audífonos philips on ear con micrófono blanco</h4>
