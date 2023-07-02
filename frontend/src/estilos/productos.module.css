@@ -219,7 +219,10 @@ header.sticky {
     height: auto;
     transition: all .40s;
     text-align: center;
-    cursor: pointer;
+}
+
+.rowThree img{
+    cursor:pointer;
 }
 
 /* Estilos para la tercera fila de la sección de clientes */
