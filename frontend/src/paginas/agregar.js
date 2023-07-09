@@ -54,6 +54,7 @@ import img46 from '../imagenes/mouse7.jpg'
 import img47 from '../imagenes/teclado4.jpg'
 import img48 from '../imagenes/teclado8.jpg'
 
+import {useLocation} from "react-router-dom";
 
 export default function Agregar() {
     const location = useLocation();

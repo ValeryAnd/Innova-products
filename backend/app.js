@@ -37,26 +37,26 @@ app.listen(5000, () => {
 // Definir una ruta para el registro de usuarios
 app.post('/register', async (req, res) => {
     try {
-      const { nombres, apellidos, email, password } = req.body;
-      const passwordHash = await bcryptjs.hash(password, 8);
+      const { nombres, apellidos, email, password } = req.body; //Se extraen los datos del cuerpo de la solicitud
+      const passwordHash = await bcryptjs.hash(password, 8); // Se hashea la contraseña utilizando bcrypt
   
-      const letrasRegex = /^[A-Za-z]+$/;
-      if (!letrasRegex.test(nombres) || !letrasRegex.test(apellidos)) {
-        res.status(400).send({ message: 'Los nombres y apellidos solo pueden contener letras' });
+      const letrasRegex = /^[A-Za-z]+$/; // Expresión regular para validar que los nombres y apellidos solo contengan letras
+      if (!letrasRegex.test(nombres) || !letrasRegex.test(apellidos)) { // Se verifica si los nombres y apellidos cumplen con la expresión regular
+        res.status(400).send({ message: 'Los nombres y apellidos solo pueden contener letras' }); // Si no cumplen, se envía una respuesta de error
         return;
       }
   
-      const existingUser = await getUserByEmail(email);
-      if (existingUser) {
+      const existingUser = await getUserByEmail(email); // Se verifica si ya existe un usuario con el mismo correo electrónico
+      if (existingUser) { // Si existe, se envía una respuesta de error indicando que el correo ya está registrado
         res.status(409).send({ message: 'El correo ya está registrado' });
         return;
       }
   
-      await createUser(nombres, apellidos, email, passwordHash);
-      res.status(201).send({ message: 'Registro exitoso' });
+      await createUser(nombres, apellidos, email, passwordHash); // Se crea un nuevo usuario en la base de datos
+      res.status(201).send({ message: 'Registro exitoso' }); // Se envía una respuesta exitosa
     } catch (error) {
       console.log(error);
-      res.status(500).send({ message: 'Error interno del servidor' });
+      res.status(500).send({ message: 'Error interno del servidor' }); // En caso de error, se envía una respuesta de error genérica
     }
   });
   
@@ -64,9 +64,9 @@ app.post('/register', async (req, res) => {
     return new Promise((resolve, reject) => {
       connection.query('SELECT * FROM users WHERE correo = ?', [email], (error, results) => {
         if (error) {
-          reject(error);
+          reject(error); // En caso de error, se rechaza la promesa con el error
         } else {
-          resolve(results.length > 0 ? results[0] : null);
+          resolve(results.length > 0 ? results[0] : null);// Si se obtienen resultados, se resuelve la promesa con el primer resultado (o null si no hay resultados)
         }
       });
     });
@@ -75,19 +75,19 @@ app.post('/register', async (req, res) => {
   function createUser(nombres, apellidos, email, passwordHash) {
     return new Promise((resolve, reject) => {
       connection.query(
-        'INSERT INTO users SET ?',
-        { nombres, apellidos, correo: email, password: passwordHash },
+        'INSERT INTO users SET ?', // Consulta SQL para insertar un nuevo usuario en la tabla 'users'
+        { nombres, apellidos, correo: email, password: passwordHash },// Valores a insertar en la tabla
         (error, results) => {
           if (error) {
-            reject(error);
+            reject(error); // En caso de error, se rechaza la promesa con el error
           } else {
-            resolve(results);
+            resolve(results); // Si se inserta correctamente, se resuelve la promesa con el resultado de la inserción
           }
         }
       );
     });
   }
-  
+
 // Definir una ruta para el inicio de sesión de usuarios
 app.post('/login', async (req, res) => {
     try {

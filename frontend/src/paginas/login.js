@@ -6,8 +6,8 @@ import styles from '../estilos/index.module.css'
 export default function Login() {
     const navegacion = useNavigate()
 
-    const validarLogin = async (e) => {
-        e.preventDefault();
+    const validarLogin = async (e) => {// Utilizar el hook useNavigate para manejar la navegación
+        e.preventDefault();// Prevenir el comportamiento por defecto del formulario
         // Obtener los valores de los campos de entrada
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
@@ -18,7 +18,7 @@ export default function Login() {
         };
 
         try {
-            const url = 'https://innova-products.onrender.com/login';
+            const url = 'https://innova-products.onrender.com/login';// URL de la API para validar el inicio de sesión
             const response = await axios.post(url, data);// Realizar la petición POST para validar el inicio de sesión
             console.log(response)// Redirigir al usuario a la página de productos después de un inicio de sesión exitoso
             navegacion('/productos')

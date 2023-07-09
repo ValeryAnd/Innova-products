@@ -1,6 +1,6 @@
-import Header from "./header";
-import Footer from "./footer";
-import styles from '../estilos/carrito.module.css'
+import Header from "./header";// Importar el componente "Header" desde el archivo "./header.js"
+import Footer from "./footer"; // Importar el componente "Footer" desde el archivo "./footer.js"
+import styles from '../estilos/carrito.module.css' // Importar los estilos CSS desde el archivo "../estilos/carrito.module.css"
 
 export default function Confirmacion() {
     return (
