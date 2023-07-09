@@ -221,10 +221,6 @@ header.sticky {
     text-align: center;
 }
 
-.rowThree img{
-    cursor:pointer;
-}
-
 /* Estilos para la tercera fila de la sección de clientes */
 .rowThree {
     display: flex;
@@ -236,6 +232,7 @@ header.sticky {
 /* Estilos para el texto de las novedades */
 .rowThree img {
     width: 100%;
+    cursor:pointer;
 }
 
 .rowThree img:hover {
