@@ -21,10 +21,10 @@ export default function Login() {
             const url = 'https://innova-products.onrender.com/login';// URL de la API para validar el inicio de sesión
             const response = await axios.post(url, data);// Realizar la petición POST para validar el inicio de sesión
             console.log(response)// Redirigir al usuario a la página de productos después de un inicio de sesión exitoso
-            navegacion('/productos')
+            navegacion('/productos') // Redirigir al usuario a la página de productos después de un inicio de sesión exitoso
         } catch (error) {
-            alert(error.response.data.message)
-            console.log(error)
+            alert(error.response.data.message)// Mostrar una alerta con el mensaje de error de la respuesta
+            console.log(error)// Imprimir el error en la consola
         }
     };
 

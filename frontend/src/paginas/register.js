@@ -4,7 +4,7 @@ import axios from 'axios'
 import styles from '../estilos/index.module.css'
 
 export default function Register() {
-    const navegacion = useNavigate()
+    const navegacion = useNavigate()// Utilizar el hook useNavigate para manejar la navegación
 
     const registrarUsuario = async (e) => {
         e.preventDefault();
@@ -27,8 +27,8 @@ export default function Register() {
             console.log(response)
             navegacion('/')// Redirigir al usuario a la página de inicio después del registro exitoso
         } catch (error) {
-            console.log(error)
-            alert(error.response.data.message)
+            console.log(error)// Mostrar una alerta con el mensaje de error de la respuesta
+            alert(error.response.data.message)// Imprimir el error en la consola
         }
     };
 
