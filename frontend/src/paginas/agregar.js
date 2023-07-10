@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom"
 import React, {useEffect, useState} from 'react';
 import Header from "./header";
 import Footer from "./footer";
@@ -53,8 +53,6 @@ import img45 from '../imagenes/mouse6.jpg'
 import img46 from '../imagenes/mouse7.jpg'
 import img47 from '../imagenes/teclado4.jpg'
 import img48 from '../imagenes/teclado8.jpg'
-
-import {useLocation} from "react-router-dom";
 
 export default function Agregar() {
     const location = useLocation();
